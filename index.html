@@ -1,37 +1,58 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="style.css">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
     <title>Taller</title>
-    
-
-
-</head>
-<body>
+  </head>
+  <body>
     <div class="header">
-        <p class="resultado" id="result"></p>
-     </div>
-    <section class="container">
-        <div class="box_text">
-            <h2>Cuadrado</h2>
-        </div>
-    <div class="formulario">
-        <input id="inputSide" type="number">
-        <button class="btn1" onclick="calcularPerimetroSquare()">Perimetro</button>
-        <button class="btn2">Area</button>
-        
+      <h2 class="title">Registrar Tareas Matemáticas</h2>
+      <p class="resultado" id="result"></p>
     </div>
-   
-    </section>
-    
-    <section class="container">
+    <div class="contenedor">
+      <div class="container">
         <div class="box_text">
-            <h2>Triangulo</h2>
+          <h2>Cuadrado</h2>
+          <p class="text_p">¿Cuanto mide cada lado de tu cuadrado?</p>
+          <div class="formulario">
+            <input class="input" id="inputSide" type="number" />
+            <button class="btn1" onclick="calcularPerimetroSquare()">
+              Perimetro
+            </button>
+            <button onclick="calcularÁreaSquare()" class="btn2">Area</button>
+          </div>
         </div>
-   
-    </section>
+        <div class="box_text">
+          <h2>triangulo</h2>
+
+          <p class="text_p">¿Cuanto mide los lados del Triángulo?</p>
+          <div class="formulario">
+            <input class="input1" id="inputSid" type="number" />
+            <input class="input1" id="inputSid" type="number" />
+            <input class="input1" id="inputSid" type="number" />
+            <button onclick="calcularPeriTriangle()" class="btn1">Perimetro</button>
+            <p class="text1_p">¿Cuanto mide el area del triangulo?</p>
+            <input class="input1" id="inputSi" type="number" />
+            <button onclick="calcularAreaTriangle()" class="btn2">Area</button>
+          </div>
+        </div>
+        <div class="box_text">
+          <h2>Círculo</h2>
+          <p class="text_p">¿Cuanto mide el radio del círculo?</p>
+          <div class="formulario">
+            <input class="input" id="inputSide" type="number" />
+            <button class="btn1" >
+              Diámetro
+            </button>
+            <button class="btn2">Perímetro</button>
+            <button class="btn2">Área</button>
+          </div>
+        </div>
+      </div>
+    </div>
+
     <script src="./index.js"></script>
-</body>
+  </body>
 </html>
