@@ -35,3 +35,29 @@ function calcularAreaTriangle(){
     const result=`El Ärea del triangulo es:  ${areaTriangle(value)} cm^2`;
     document.getElementById('result').innerText=result;
 }
+//Perimetro Circle
+const diamCircle=(radio)=>radio*2
+const periCircle=(radio) => diamCircle(radio) * 3.14;
+
+function calcularDiamCircle(){
+    let inputData=document.getElementById('inputS');
+    let value=Number(inputData.value);
+
+    const result=`El Diametro del Circulo es:  ${diamCircle(value)} cm^2`;
+    document.getElementById('result').innerText=result;
+}
+function calcularPerCircle(){
+    let inputData=document.getElementById('inputS');
+    let value=Number(inputData.value);
+
+    const result=`El Perimetro del Circulo es:  ${periCircle(value)} cm`;
+    document.getElementById('result').innerText=result;
+}
+const areaCircle = (radio) => (radio * radio) * Math.PI;
+function calcularAreCircle(){
+    let inputData=document.getElementById('inputS');
+    let value=Number(inputData.value);
+
+    const result=`El Area del Circulo es:  ${areaCircle(value)} cm^2`;
+    document.getElementById('result').innerText=result;
+}
