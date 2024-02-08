@@ -3,7 +3,7 @@
     background-color: rgb(8, 8, 77);
     color: white;
     border-radius: 10px;
-    height: 100px;
+   height: 115px;
     text-align: center;
 
 
@@ -12,10 +12,9 @@
     font-size: 30px;
 }
 .resultado{
-    margin-top: auto;
+   
     font-size: 20px;
 }.contenedor{
-    
     display: flex;
     width: 100%;
    
@@ -24,9 +23,11 @@
   
    display: flex;
    flex-wrap: wrap;
-   justify-content: space-around;
+   justify-content: center;
    width: 100%;
-   gap: 0px 10px;   
+   gap: 100px;
+   
+
 }
 .box_text{
     background-color: rgb(8, 8, 77);
